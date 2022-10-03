@@ -22,7 +22,7 @@ Keep all of the folders and hidden files.  .keep files are present to force git 
 ## 2) Clone your app's GitHub repo into your personal nanoHUB filespace.
 * Open a Jupyter Notebook session in nanoHUB and navigate to the directory into which you will clone your app's GitHub repo.
 * In 2022, the latest Jupyter Notebook version is [Jupyter Notebook (202105) ](https://nanohub.org/tools/jupyter70). There are other versions that you can find by searching in the tools module in your nanoHUB dashboard.
-* In your newly created GitHub repository, find the link you need by clicking the code download button and viewing the options.  
+* In your newly created GitHub repository, find the link to this repo by clicking the code download button and viewing the options.  
 
 
 
