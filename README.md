@@ -28,31 +28,38 @@ It is convenient to work with separate windows open to your GitHub account and y
 * In your newly created GitHub repository, find the link to this repo by clicking the green code download button and viewing the options.  
 
   ### There are two ways to clone a repo, using HTTPS or using SSH.  
-  If you use HTTPS, you will need to enter your credentials every time you push code to the repo.  If you set up your accounts to use SSH, your credentials are stored in your accounts, and you don't have to enter them again as you work.
+  If you use HTTPS, you will need to enter your credentials every time you push code to the repo.  By contrast, if you set up your accounts to use SSH, your credentials are stored in your accounts, and you don't have to enter them again as you work.
   
   ### To use the HTTPS URL:  
-      * Go to the HTTPS tab
-      * Click the clipboard icon to copy your tools's https URL to the clipboard.
-      * In your nanoHUB Jupyter Notebook terminal, type `git clone` and then paste the URL from the clipboard and hit return.
-      * The full command will look like this: `git clone https://github.com/yourgithubaccount/yourgithubrepo`
-      * You will be prompted for your GitHub account name.
-      * You will be prompted for your GitHub password.  
-          * Paste in your GitHub Private Access Token and then hit return.  You will not see any response from the terminal until you hit return.
-      * You should see the progress of your repo being cloned into nanoHUB. 
+  * Go to the HTTPS tab
+  * Click the clipboard icon to copy your tools's https URL to the clipboard.
+  * In your nanoHUB Jupyter Notebook terminal, type `git clone` and then paste the URL from the clipboard and hit return.
+  * The full command will look like this: `git clone https://github.com/yourgithubaccount/yourgithubrepo`
+  * You will be prompted for your GitHub account name.
+  * You will be prompted for your GitHub password. Paste in your GitHub Private Access Token and then hit return. You will not see any response from the terminal until you hit return.
+  * You should see the progress of your repo being cloned into nanoHUB. 
 
  ### To use the SSH URL: 
-    * You will have to have an ssh key in nanoHUB and add the public key to your GitHub account to connect to your personal nanoHUB filespace. [Instructions for setting up an ssh key pair in nanoHUB](https://nanohub.org/kb/tools/sshkeypair).
-     * Go to the SSH tab
-     * Click the clipboard icon to copy your tools's ssh URL to the clipboard.
-     * In your nanoHUB Jupyter Notebook terminal, type `git clone` and then paste the URL from the clipboard.  
-     * The full command will look like this: `git clone git@github.com:yourgithubaccount/yourgithubrepo`
-     * You should see the progress of your repo being cloned into nanoHUB. 
+   * You will have to have an ssh key in nanoHUB and add the public key to your GitHub account to connect to your personal nanoHUB filespace. [Instructions for setting up an ssh key pair in nanoHUB](https://nanohub.org/kb/tools/sshkeypair).
+   * Go to the SSH tab
+   * Click the clipboard icon to copy your tools's ssh URL to the clipboard.
+   * In your nanoHUB Jupyter Notebook terminal, type `git clone` and then paste the URL from the clipboard.  
+   * The full command will look like this: `git clone git@github.com:yourgithubaccount/yourgithubrepo`
+   * You should see the progress of your repo being cloned into nanoHUB. 
 
 ## 3) Register your tool in nanoHUB
-Go to https://nanohub.org/tools/create to register and create your nanoHUB tool.
+Go to https://nanohub.org/tools/create to register your nanoHUB tool.
+
 * In the section for Repository host, select "Host GIT repository on GitHUB".
+
+
 * In the section for Git Repository URL, paste in the URL for your app's GitHub repo.
+    * For a public GitHub repository, paste in the https URL from the clipboard
+    * For a private GitHub repository, you need to reformat the URL to have this form: `ssh://git@yourgithubaccount/yourgithubrepo/git`
+
 * For publishing option, select Jupyter notebook.
+
+
 * If you set up a private GitHub repo, you need to invite nanohub-apps as a collaborator in order to get the key to connect to nanoHUB/apps.
   * Click on the settings gear, then click on Collaborators.  Search for nanohub-apps, as shown in the following image:
 
