@@ -29,6 +29,8 @@ It is convenient to work with separate windows or tabs for your GitHub account a
 * Open a terminal in a Jupyter Notebook session in nanoHUB and navigate to the directory into which you will clone your tool's GitHub repo.
 * In 2022, the latest Jupyter Notebook version is [Jupyter Notebook (202105)](https://nanohub.org/tools/jupyter70). There are also other versions that you can find by searching in the tools module in your nanoHUB dashboard.
 * In your newly created GitHub repository, find the link to this repo by clicking the green code download button and viewing the options.  
+  ![codeDownloadButton](https://user-images.githubusercontent.com/35706811/194592373-499642e4-7e61-4207-8608-d096aa064315.png)
+
 
 ### There are two ways to clone a repo, using HTTPS or using SSH.  
 If you use HTTPS, you will need to enter your credentials every time you push code to the repo.  By contrast, if you set up your accounts to use SSH, your credentials are stored in your accounts, and you don't have to enter them again as you work.
