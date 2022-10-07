@@ -2,7 +2,7 @@
 This is a repository template for creating a nanoHUB Jupyter Notebook app.  The basic steps in the process are listed below. 
 
 * Wherever you see `yourgithubaccount`, substitute the name of your GitHub account.  
-* Wherever you see `yourgithubrepo`, substitute the name of your app's GitHub repo.  
+* Wherever you see `yourgithubrepo`, substitute the name of your tool's GitHub repo.  
 
 These instructions assume that you already have a [nanoHUB account](https://nanohub.org/) and a [GitHub account](https://github.com/).
 
@@ -12,36 +12,47 @@ These instructions assume that you already have a [nanoHUB account](https://nano
   ![GitHub_public_template](https://user-images.githubusercontent.com/35706811/193608966-c6ccad77-6af3-4031-9a8f-98b6246049d0.png)
 
 * For Repository name, we suggest using your app's *shortname* to make life easier.  Refer to the documentation on registering a nanoHUB app for more information on the app short name. (link to come) 
-* Write a short description of your app.
-* Select whether the repo will be public or private. Public is easier.
-* Do not check the box to include all branches.  nanoHUB only works with the master branch.
+* Select whether the repo will be public or private. nanoHUB encourages you to create a public repo.  If you can make your tools both open access in nanoHUB and open source in GitHub, this creates a greater potential for others to use, cite and build upon your work. Additionally, working with a public repo is technically much simpler and avoids periodic issues (such as firewalls) that can unexpectedly arise when working with private repos.
+* You do not need to check the box to include all branches. There is only one branch here, and nanoHUB only works with the main branch of your repo.
 * Click the green button at the bottom to "Create repository from template".
 
 Keep all of the folders and hidden files.  .keep files are present to force git to track initially empty directories. Should the directories become populated the .keep file can be removed.
 
 ## 2) Clone your app's GitHub repo into your personal nanoHUB filespace.
+It is convenient to work with separate windows open to your GitHub account and your nanoHUB account.
 * Open a Jupyter Notebook session in nanoHUB and navigate to the directory into which you will clone your app's GitHub repo.
 * In 2022, the latest Jupyter Notebook version is [Jupyter Notebook (202105) ](https://nanohub.org/tools/jupyter70). There are other versions that you can find by searching in the tools module in your nanoHUB dashboard.
-* In your newly created GitHub repository, find the link to this repo by clicking the code download button and viewing the options.  
+* In your newly created GitHub repository, find the link to this repo by clicking the green code download button and viewing the options.  
 
+  ### There are two ways to clone a repo, using HTTPS or using SSH.
+  ### To use the HTTPS URL:  
+      * Go to the HTTPS tab
+      * Click the clipboard icon to copy your tools's https URL to the clipboard.
+      * In your nanoHUB Jupyter Notebook terminal, type `git clone` and then paste the URL from the clipboard and hit return.
+      * The full command will look like this: `git clone https://github.com/yourgithubaccount/yourgithubrepo`
+      * You will be prompted for your GitHub account name.
+      * You will be prompted for your GitHub password.  
+          * Paste in your GitHub Private Access Token and then hit return.  You will not see any response from the terminal until you hit return.
+      * You should see the progress of your repo being cloned into nanoHUB. 
 
+ ### To use the SSH URL: 
+    * You will have to have an ssh key in nanoHUB and add the public key to your GitHub account to connect to your personal nanoHUB filespace. [Instructions for setting up an ssh key pair in nanoHUB](https://nanohub.org/kb/tools/sshkeypair).
+     * Go to the SSH tab
+     * Click the clipboard icon to copy your tools's ssh URL to the clipboard.
+     * In your nanoHUB Jupyter Notebook terminal, type `git clone` and then paste the URL from the clipboard.  
+     * The full command will look like this: `git clone git@github.com:yourgithubaccount/yourgithubrepo`
+     * You should see the progress of your repo being cloned into nanoHUB. 
 
-  ### 2a) If you set up a public GitHub repository, use the public https URL:  
-  * Click the clipboard icon to copy your app's public https URL to the clipboard.
-  * In your nanoHUB Jupyter Notebook terminal, type `git clone https://github.com/yourgithubaccount/yourgithubrepo`.
-
-  ### 2b) If you set up a private GitHub repository, use the private ssh URL:
-  * You will have to have an ssh key in nanoHUB and add the public key to your GitHub account to connect to your personal nanoHUB filespace. [Instructions for setting up an ssh key pair in nanoHUB](https://nanohub.org/kb/tools/sshkeypair).
-  * In your nanoHUB Jupyter Notebook terminal, type `git clone https://github.com/yourgithubaccount/yourgithubrepo` to set up the connection between your GitHub repo and your local nanoHUB repo. 
-  * Additionally, you need to invite nanohub-apps as a collaborator to your GitHub repo, in order to get the key to connect to nanoHUB/apps.
+## 3) Register your tool in nanoHUB
+Go to https://nanohub.org/tools/create to register and create your nanoHUB tool.
+* In the section for Repository host, select "Host GIT repository on GitHUB".
+* In the section for Git Repository URL, paste in the URL for your app's GitHub repo.
+* For publishing option, select Jupyter notebook.
+* If you set up a private GitHub repo, you need to invite nanohub-apps as a collaborator in order to get the key to connect to nanoHUB/apps.
   * Click on the settings gear, then click on Collaborators.  Search for nanohub-apps, as shown in the following image:
 
       ![nanoHUB-apps_collaborator](https://user-images.githubusercontent.com/35706811/193604665-bee75798-3029-4a18-8df0-3777d166ea38.png)
 
-## 3) Go to https://nanohub.org/tools/create to register and create your nanoHUB tool.
-* In the section for Repository host, select "Host GIT repository on GitHUB".
-* In the section for Git Repository URL, paste in the URL for your app's GitHub repo.
-* For publishing option, select Jupyter notebook.
 
 After you click the button to register your tool, you will be redirected to your tool's status page, and you will also receive an email with a link to the tool's project space in nanoFORGE.
 
