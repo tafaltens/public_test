@@ -11,7 +11,7 @@ These instructions assume that you already have a [nanoHUB account](https://nano
 
   ![GitHub_public_template](https://user-images.githubusercontent.com/35706811/193608966-c6ccad77-6af3-4031-9a8f-98b6246049d0.png)
 
-* For Repository name, we suggest using your tool's *shortname* to make life easier.  Refer to the documentation on registering a nanoHUB tool for more information on the *shortname*. (link to come) 
+* For **Repository name**, we suggest using your tool's *shortname* to make life easier.  Refer to the documentation on registering a nanoHUB tool for more information on the *shortname*. (link to come) 
 
 * Select whether the repo will be **public** or **private**. 
      * nanoHUB encourages you to create a **public** GitHub repo. 
@@ -20,7 +20,7 @@ These instructions assume that you already have a [nanoHUB account](https://nano
 
 * You do not need to check the box to include all branches. There is only one branch here, and nanoHUB only works with the main branch of your repo.
 
-* Click the green button at the bottom to "Create repository from template".
+* Click the green button at the bottom to **Create repository from template**.
 
 Keep all of the folders and hidden files.  .keep files are present to force git to track initially empty directories. Should the directories become populated the .keep file can be removed.
 
