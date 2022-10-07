@@ -57,8 +57,12 @@ Go to https://nanohub.org/tools/create to register your nanoHUB tool.
 * In the section for Repository host, select "Host GIT repository on GitHUB".
 
 * In the section for Git Repository URL, paste in the URL for your app's GitHub repo.
-  * For a public GitHub repository, paste in the https URL from the clipboard: `https://github.com/yourgithubaccount/yourgithubrepo`.
-  * For a private GitHub repository, you need to reformat the URL to have this form: `ssh://git@github.com/yourgithubaccount/yourgithubrepo`.
+  * For a public GitHub repository, paste in the https URL from the clipboard: 
+  
+    `https://github.com/yourgithubaccount/yourgithubrepo`
+  * For a private GitHub repository, you need to reformat the URL to have this form: 
+
+    `ssh://git@github.com/yourgithubaccount/yourgithubrepo`
 
 * For publishing option, select Jupyter notebook.
 
