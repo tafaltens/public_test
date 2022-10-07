@@ -7,12 +7,15 @@ This is a repository template for creating a nanoHUB Jupyter Notebook app.  The 
 These instructions assume that you already have a [nanoHUB account](https://nanohub.org/) and a [GitHub account](https://github.com/).
 
 ## 1) Create a GitHub repository for your new app using this template.
-* Click the green "Use this template" button ![use_this_template](https://user-images.githubusercontent.com/35706811/193605808-f8e68353-bdf4-46ef-949d-4f3ea1f4c9ca.png) to start the process and open a page with several options to select and fields to fill in.
+* Click the green "Use this template" button ![use_this_template](https://user-images.githubusercontent.com/35706811/193605808-f8e68353-bdf4-46ef-949d-4f3ea1f4c9ca.png) to start the process. This opens a page that has several options for you to select and fields to fill in.
 
   ![GitHub_public_template](https://user-images.githubusercontent.com/35706811/193608966-c6ccad77-6af3-4031-9a8f-98b6246049d0.png)
 
-* For Repository name, we suggest using your app's *shortname* to make life easier.  Refer to the documentation on registering a nanoHUB app for more information on the app short name. (link to come) 
-* Select whether the repo will be public or private. nanoHUB encourages you to create a public repo.  If you can make your tools both open access in nanoHUB and open source in GitHub, this creates a greater potential for others to use, cite and build upon your work. Additionally, working with a public repo is technically much simpler and avoids periodic issues (such as firewalls) that can unexpectedly arise when working with private repos.
+* For Repository name, we suggest using your tool's *shortname* to make life easier.  Refer to the documentation on registering a nanoHUB tool for more information on the shortname. (link to come) 
+* Select whether the repo will be public or private. 
+     nanoHUB encourages you to create a public repo. 
+     If you can make your tools both open access in nanoHUB and open source in GitHub, this creates a greater potential for others to use, cite and build upon your work. 
+     Additionally, working with a public repo is technically much simpler and avoids periodic issues (such as firewalls) that can unexpectedly arise when working with a private repo.
 * You do not need to check the box to include all branches. There is only one branch here, and nanoHUB only works with the main branch of your repo.
 * Click the green button at the bottom to "Create repository from template".
 
@@ -24,7 +27,9 @@ It is convenient to work with separate windows open to your GitHub account and y
 * In 2022, the latest Jupyter Notebook version is [Jupyter Notebook (202105) ](https://nanohub.org/tools/jupyter70). There are other versions that you can find by searching in the tools module in your nanoHUB dashboard.
 * In your newly created GitHub repository, find the link to this repo by clicking the green code download button and viewing the options.  
 
-  ### There are two ways to clone a repo, using HTTPS or using SSH.
+  ### There are two ways to clone a repo, using HTTPS or using SSH.  
+  If you use HTTPS, you will need to enter your credentials every time you push code to the repo.  If you set up your accounts to use SSH, your credentials are stored in your accounts, and you don't have to enter them again as you work.
+  
   ### To use the HTTPS URL:  
       * Go to the HTTPS tab
       * Click the clipboard icon to copy your tools's https URL to the clipboard.
